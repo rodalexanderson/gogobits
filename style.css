@@ -4,7 +4,7 @@
    box-sizing: border-box;
    margin-right: auto;
    margin-left: auto;
-   font-family: 'Bebas Neue', cursive;
+   font-family: Arial, Helvetica, sans-serif;
 }
 
 /* NAVBAR STARTS */
@@ -200,7 +200,7 @@ h1{
   font-weight: 600;
 }
 
-@media (min-width:900px) {
+@media (min-width:1000px) {
   #hero{
   background-image: none;
   flex-direction: row;
@@ -212,7 +212,7 @@ h1{
   background-position-x:center;
   }
   h1{
-    font-size: 60px;
+    font-size: 50px;
   }
   #herodivimage{
   width: 50%;
@@ -228,55 +228,56 @@ h1{
   font-size: 30px;
 }
 .auto-type, .typed-cursor{
-  font-size:150px;
+  font-size:100px;
 }
+}
+@media (min-width:1650px) {
+  .auto-type, .typed-cursor{
+    font-size:150px;
+  }
+  h1{
+    font-size: 60px;
+  }
 }
 /* HERO ENDS */
 
 /* SERVICES START */
-#services{
-  margin-top: -40px;
-}
 
 #h2services{
   font-size: xx-large;
   text-align: center;
   color:#FF6C26;
-  padding-top: 80px;
+  padding-top: 10px;
   }
-#worldmap{
-  width: 60%;
-  display: flex;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 50px;
-    }
-    .container{
-        margin-top: -30px;
+.servicestext{
+  width: 85%;
+}
+.question{
+  font-weight: bold;
+  font-size: larger;
+}
+.italic{
+  font-style: italic;
+}
+.allservices{
         background-color: #FF6C26;
-        display: flex;
-        flex-direction: row;
-        margin-bottom: 5%;
         text-align: center;
-        max-width: 1600px;
-    }
-    .whitebg{
-        width: 28%;
-        min-height: 550px;
-        
+        padding-top: 10px;
+        padding-bottom: 10px;
+      }
+    .servicescard{
+        width: 90%;
+        margin: 20px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        border-radius: 5%;
         background-color: #fff;
-        opacity: 0.9;
-        flex-wrap: wrap;
-        margin-bottom: 50px;
-        margin-top: 50px;
     }
     .icon{
-        margin-top: 40px;
-        width: 150px;
-        height: 110px;
-        display: flex;
-        margin-left: auto;
-        margin-right: auto;
+      width: 150px;
+      height: 110px;
+      margin-left: auto;
+      margin-right: auto;
     }
     .servicetext{
       width: 80%;
@@ -287,10 +288,13 @@ h1{
       text-align: left;
       color: #502a0d;
     }
-    .h3{
-      color: rgb(120, 16, 216);
-      font-size: xx-large;
-    }
+    #worldmap{
+      width: 60%;
+      display: flex;
+      margin-left: auto;
+      margin-right: auto;
+      margin-bottom: 50px;
+        }
     #flagcontainer{
       margin-top: 20px;
       margin-bottom: 50px;
@@ -299,19 +303,16 @@ h1{
       justify-content: space-evenly;
       flex-wrap: wrap;
     }
-    @media (max-width:900px) {
-        #worldmap{
-            width: 95%;
-        }
-        .container{
-            flex-direction: column;
-        }
-        .whitebg{
-            width: 70%;
-        }
-        video{
-          width: 90%;
-        }
+    @media (min-width:600px) {
+      .servicescontainer{
+        display: flex;
+        flex-wrap: wrap;
+      }
+      .servicescard{
+        width: 450px;
+        margin-left: auto;
+        margin-right: auto;
+      }
     }
 /* SERVICES END */
 
