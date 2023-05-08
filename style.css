@@ -289,7 +289,7 @@ h1{
       color: #502a0d;
     }
     #worldmap{
-      width: 60%;
+      width: 95%;
       display: flex;
       margin-left: auto;
       margin-right: auto;
@@ -298,10 +298,13 @@ h1{
     #flagcontainer{
       margin-top: 20px;
       margin-bottom: 50px;
-      width: 90%;
+      width: 95%;
       display: flex;
       justify-content: space-evenly;
       flex-wrap: wrap;
+    }
+    .flag{
+      margin: 5px;
     }
     @media (min-width:600px) {
       .servicescontainer{
@@ -312,6 +315,12 @@ h1{
         width: 450px;
         margin-left: auto;
         margin-right: auto;
+      }
+      #worldmap{
+        width: 60%;
+      }
+      .flag{
+        width: 6%;
       }
     }
 /* SERVICES END */
@@ -337,5 +346,50 @@ details > p {
 /* FAQ ENDS */
 
 /* CONTACT STARTS */
+
+form{
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  height: 500px;
+  border: solid black 2px;
+  padding: 20px;
+  margin-bottom: 40px;
+  border-radius: 10%;
+  border-color: orangered;
+}
+form > label{
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
+form > textarea{
+  width: 80%;
+  min-height: 80px;
+}
+#submitbutton{
+  margin-top: 40px;
+  margin-bottom: 40px;
+    min-width: 130px;
+    height: 40px;
+    color: #fff;
+    padding: 5px 10px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+    outline: none;
+    border-radius: 5px;
+    border: none;
+    background-size: 120% auto;
+    background-image: linear-gradient(315deg, #ef3a1f 0%, #fd1d1d 50%, #fcb045);
+  }
+#submitbutton:hover {
+    background-position: right center;
+  }
+#submitbutton:active {
+    top: 2px;
+  }
 
 /* CONTACT ENDS */

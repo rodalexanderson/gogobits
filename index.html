@@ -41,8 +41,8 @@
         </div>
         <div id="herodivtext">
             <span class="auto-type"></span>
-            <h1>Grow your business to other countries by showing your content in their language</h1>
-            <p class="herotext">Use the same content, get more sales</p>
+            <h1>Grow your business everywhere by showing your content in their language</h1>
+            <p class="herotext">Same content, more sales</p>
         </div>
     </section>
     <section id="services">
@@ -98,17 +98,17 @@
         <h3 class="h3">¿Qué idiomas hacemos localización de contenido?</h3>
             <img id="worldmap" src="./images/World Map.svg" alt="mapa con puntos blancos y naranjas donde se muestran los idiomas que se puede hacer la localizacion de contenido">
             <div id="flagcontainer">
-                <img src="./images/alemania.svg" alt="germany's flag">
-                <img src="./images/argentina.svg" alt="argentinan flag">
-                <img src="./images/australia.svg" alt="australian flag">
-                <img src="./images/brasil.svg" alt="brazils flag">
-                <img src="./images/canada.svg" alt="canadian flag">
-                <img src="./images/colombia.svg" alt="colombian flag">
-                <img src="./images/france.svg" alt="france flag">
-                <img src="./images/japan.svg" alt="japanese flag">
-                <img src="./images/mexico.svg" alt="mexican flag">
-                <img src="./images/spain.svg" alt="spanish flag">
-                <img src="./images/usa.svg" alt="american flag">
+                <img src="./images/alemania.svg" alt="germany's flag" class="flag">
+                <img src="./images/argentina.svg" alt="argentinan flag"class="flag">
+                <img src="./images/australia.svg" alt="australian flag"class="flag">
+                <img src="./images/brasil.svg" alt="brazils flag"class="flag">
+                <img src="./images/canada.svg" alt="canadian flag"class="flag">
+                <img src="./images/colombia.svg" alt="colombian flag" class="flag">
+                <img src="./images/france.svg" alt="france flag"class="flag">
+                <img src="./images/japan.svg" alt="japanese flag"class="flag">
+                <img src="./images/mexico.svg" alt="mexican flag"class="flag">
+                <img src="./images/spain.svg" alt="spanish flag"class="flag">
+                <img src="./images/usa.svg" alt="american flag"class="flag">
             </div>
     </section>
     <section id="faq">
@@ -155,14 +155,38 @@
         </details>
     </section>
     <section id="contact">
-
+        <h2>Contact us!</h2>
+        <form >
+                <label >Full Name</label>
+                <input type="text" name="user_name" placeholder='John Wick' />
+                <br>
+              <label className='mt-8'>Email</label>
+              <input type="email" name="user_email" placeholder='name@BusinessEmail.com'/>
+              <br>
+              <label htmlFor="services" className='mt-8'>Choose the service you are interested</label>
+              <select name="user_service" required={true} defaultValue="disable-value">
+                <option disabled value="disable-value" > -- Select an option -- </option>
+                <option name='document' value="document">Document Translation</option>
+                <option name='dubbing' value="dubbing">Dubbing</option>
+                <option name='voice' value="voice">Voice-Over</option>
+                <option name='video' value="video">Professional Video Production</option>
+                <option name='interpretation' value="interpretation">Remote Simultaneous Interpretation</option>
+              </select>
+              <br>
+              <label className='mt-8'>Message</label>
+              <textarea name="message" placeholder='Company name, youtube channel, vlog, socials, website, ideas, and other important information we might find useful'></textarea>
+              <input type="submit" value="Send"
+              id="submitbutton"
+              >
+            
+          </form>
 
 
     </section>
     <footer> Gogobits &reg;</footer>
 
 
-    <!-- SCRIPTS START HERE -->
+    <!-- SCRIPTS FOR TYPING EFFECT IN HERO SECTION START HERE -->
     <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
     <script>
         var typed = new Typed('.auto-type', {
@@ -184,7 +208,7 @@
             location.replace("/fr.html")
         }
     </script>
-    <!-- SCRIPTS END HERE -->
+    <!-- SCRIPTS FOR TYPING EFFECT IN HERO SECTION END HERE -->
     
 </body>
 </html>
