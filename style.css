@@ -353,7 +353,7 @@ form{
   flex-direction: column;
   justify-content: space-evenly;
   height: 500px;
-  border: solid black 2px;
+  border: solid black 3px;
   padding: 20px;
   margin-bottom: 40px;
   border-radius: 10%;
@@ -390,6 +390,13 @@ form > textarea{
   }
 #submitbutton:active {
     top: 2px;
+  }
+
+  @media (min-width:600px) {
+    form{
+      width: 60%;
+      border-radius: 0;
+    }
   }
 
 /* CONTACT ENDS */

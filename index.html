@@ -1,11 +1,12 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style.css">
-    <link rel="alternate" hreflang="es" href="https://gogobits.mx">
+    <link rel="alternate" hreflang="en" href="https://gogobits.mx">
+    <script src="script.js"></script>
     <title>Translation & Localization services for entrepreneurs and small businesses</title>
 </head>
 <body>
@@ -49,15 +50,15 @@
         <h2 id="h2services">Services</h2>
         <div class="servicestext">
             <p class="question">Why would I need to hire you?</p>
-            <p>I need to divide my answer into two parts. </p>
-            <p>You might think using Google Translate could be cheaper, and people should use it for general guidelines rather than business purposes. Most translations are never accurate.</p>
+            <p>First of all, we understand this is not for everyone. This service is only for content creators, vblogs, entrepreneurs, and small businesses that create value through content and help people meet their goals. Our service will help you reach new markets with the same content you know can help them.</p>
             <p>Second, our localization services are culturally sensitive. We translate and modify your content according to the language or country you want to enter. </p>
-            <p>Let's use an example. Imagine you are from the U.S. and must write your delicious BBQ recipe to your long cousin living in Scotland. If you wrote it as you would for your neighbor, I'm sure he won't understand you. He might think you were discussing a BBQ sauce rather than a cooking style, and some ingredients might have different names. </p>
+            <p class="question">Why not use a free service like Google Translate?</p>
+            <p>You might think of using Google Translate or even the free translation services from Youtube. The truth is most translations are not accurate. Remember that awful translation in a movie? You probably spent all movie telling yourself you could've done a better job.</p>
+            <p>On the other hand, you would be investing your precious time in something other than your business goal. Is it worth it?</p>
             <p class="question">What if my niche is too specific?</p>
             <p>Don't worry about your niche or the topic you're an expert. Our team has proven experience in taking on any project!</p>
             <p>Our team has certified translators and native speakers from the languages we provide the service. That's why we don't translate all languages and all countries, so our service is top quality.</p>
             <p class="italic">Would you risk using other services that only hire from Fiverr or Upwork?</p>
-            
         </div>
         <div class="allservices">
             <p>To help you, we have the following services:</p>
@@ -156,29 +157,28 @@
     </section>
     <section id="contact">
         <h2>Contact us!</h2>
-        <form >
+        <form id="myForm">
                 <label >Full Name</label>
-                <input type="text" name="user_name" placeholder='John Wick' />
+                <input type="text" id="user_name" name="user_name" placeholder='John Wick' required />
                 <br>
               <label className='mt-8'>Email</label>
-              <input type="email" name="user_email" placeholder='name@BusinessEmail.com'/>
+              <input type="email" id="user_email" required name="user_email" placeholder='name@BusinessEmail.com'/>
               <br>
               <label htmlFor="services" className='mt-8'>Choose the service you are interested</label>
-              <select name="user_service" required={true} defaultValue="disable-value">
+              <select name="user_service" id="user_service" required defaultValue="disable-value">
                 <option disabled value="disable-value" > -- Select an option -- </option>
-                <option name='document' value="document">Document Translation</option>
+                <option name='document-Translation' value="document">Document Translation</option>
                 <option name='dubbing' value="dubbing">Dubbing</option>
-                <option name='voice' value="voice">Voice-Over</option>
-                <option name='video' value="video">Professional Video Production</option>
-                <option name='interpretation' value="interpretation">Remote Simultaneous Interpretation</option>
+                <option name='voice-over' value="voice">Voice-Over</option>
+                <option name='video-production' value="video">Professional Video Production</option>
+                <option name='simultaneous-interpretation' value="interpretation">Remote Simultaneous Interpretation</option>
               </select>
               <br>
               <label className='mt-8'>Message</label>
-              <textarea name="message" placeholder='Company name, youtube channel, vlog, socials, website, ideas, and other important information we might find useful'></textarea>
-              <input type="submit" value="Send"
-              id="submitbutton"
-              >
-            
+              <textarea placeholder='Company name, youtube channel, vlog, socials, website, ideas, and other important information we might find useful' id="message" name="message" required></textarea>
+              <button onclick="sendMail()" id="submitbutton1" >
+                Send
+              </button>
           </form>
 
 
@@ -209,6 +209,16 @@
         }
     </script>
     <!-- SCRIPTS FOR TYPING EFFECT IN HERO SECTION END HERE -->
+    <!-- SCRIPTS FOR EMAILJS IN CONTACT START HERE -->
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+    (function(){
+        emailjs.init("zNttjDfiZX2Omcnj6");
+    })();
+    </script>
+    <!-- SCRIPTS FOR EMAILJS IN CONTACT END HERE -->
     
 </body>
 </html>
