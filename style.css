@@ -206,7 +206,7 @@ h1{
   flex-direction: row;
   }
   #herodivimage{
-  background-image: url(./images/hero.png);
+  background-image: url(./images/hero.webp);
   background-repeat: no-repeat;
   background-size: cover;
   background-position-x:center;
