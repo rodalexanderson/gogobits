@@ -9,7 +9,19 @@
     <link rel="stylesheet" href="./style.css">
     <link rel="alternate" hreflang="en" href="https://gogobits.mx">
     <script src="script.js"></script>
+        <!-- SCRIPTS FOR EMAILJS IN CONTACT START HERE -->
+        <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+        </script>
+        <script type="text/javascript">
+        (function(){
+            emailjs.init("zNttjDfiZX2Omcnj6");
+        })();
+    </script>
+    <!-- SCRIPTS FOR EMAILJS IN CONTACT END HERE -->
     <title>Translation & Localization services for entrepreneurs and small businesses</title>
+
+
 </head>
 <body>
     <nav id="nav">
@@ -68,7 +80,7 @@
                 <div class="servicescard">
                     <img class="icon"  src="./images/voice.svg" alt="person talking to a microphone and colofrul voice waves come out ">
                     <h3>Documents translation</h3>
-                    <hr style="width: 80%; height: 4px; background-color: blueviolet; border: none;">
+                    <hr style="width: 80%; height: 4px; background-color: rgb(111, 17, 199); border: none;">
                     <p class="servicetext">Already have an e-book, PDF, manual, or even a whole book?</p>
                     <p class="servicetext">It's the perfect way to start in other markets. We can use your already proven work to reach out to new customers.</p> 
                     <p class="servicetext">Disclaimer: We won't receive any Legal or binding documents, and you should only send them to legal offices dedicated to law translation. </p>
@@ -158,26 +170,27 @@
         </details>
     </section>
     <section id="contact">
-        <h2>Contact us!</h2>
-        <form id="myForm">
+        <h2 id="h2contact">Contact us!</h2>
+        <form id="myForm"> 
                 <label >Full Name</label>
                 <input type="text" id="user_name" name="user_name" placeholder='John Wick' required />
                 <br>
-              <label className='mt-8'>Email</label>
+              <label>Email</label>
               <input type="email" id="user_email" required name="user_email" placeholder='name@BusinessEmail.com'/>
               <br>
-              <label htmlFor="services" className='mt-8'>Choose the service you are interested</label>
-              <select name="user_service" id="user_service" required defaultValue="disable-value">
-                <option disabled value="disable-value" > -- Select an option -- </option>
+              <label htmlFor="services">Choose the service you are interested</label>
+              <select name="user_service" id="user_service">
+                <option disabled > -- Select an option -- </option>
                 <option name='document-Translation' value="document">Document Translation</option>
                 <option name='dubbing' value="dubbing">Dubbing</option>
-                <option name='voice-over' value="voice">Voice-Over</option>
+                <option name='voice-over' value="voice-over">Voice-Over</option>
                 <option name='video-production' value="video">Professional Video Production</option>
                 <option name='simultaneous-interpretation' value="interpretation">Remote Simultaneous Interpretation</option>
-              </select>
+            </select>
               <br>
-              <label className='mt-8'>Message</label>
+              <label>Message</label>
               <textarea placeholder='Company name, youtube channel, vlog, socials, website, ideas, and other important information we might find useful' id="message" name="message" required></textarea>
+              <!-- <input type="submit" value="Submit" id="submitbutton"> -->
               <button onclick="sendMail()" id="submitbutton" >
                 Send
               </button>
@@ -211,16 +224,9 @@
         }
     </script>
     <!-- SCRIPTS FOR TYPING EFFECT IN HERO SECTION END HERE -->
-    <!-- SCRIPTS FOR EMAILJS IN CONTACT START HERE -->
-    <script type="text/javascript"
-        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
-    </script>
-    <script type="text/javascript">
-    (function(){
-        emailjs.init("zNttjDfiZX2Omcnj6");
-    })();
-    </script>
-    <!-- SCRIPTS FOR EMAILJS IN CONTACT END HERE -->
+
+
+
     
 </body>
 </html>

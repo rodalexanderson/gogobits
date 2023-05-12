@@ -192,7 +192,8 @@ h1{
 .herotext{
   text-align: center;
   font-size: x-large;
-  color: #FF6C26;
+  color: rgb(111, 17, 199);
+  font-weight: 600;
 }
 .auto-type, .typed-cursor{
   font-size:90px;
@@ -213,6 +214,7 @@ h1{
   }
   h1{
     font-size: 50px;
+    width: 95%;
   }
   #herodivimage{
   width: 50%;
@@ -225,7 +227,7 @@ h1{
   background-color: white ;
 }
 .herotext{
-  font-size: 30px;
+  font-size: 70px;
 }
 .auto-type, .typed-cursor{
   font-size:100px;
@@ -255,6 +257,7 @@ h1{
 .question{
   font-weight: bold;
   font-size: larger;
+  color: rgb(111, 17, 199);
 }
 .italic{
   font-style: italic;
@@ -347,12 +350,18 @@ details > p {
 
 /* CONTACT STARTS */
 
+#h2contact{
+  color: rgb(111, 17, 199);
+  text-align: center;
+  font-size: xx-large;
+}
+
 form{
   width: 90%;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
-  height: 500px;
+  min-height: 500px;
   border: solid black 3px;
   padding: 20px;
   margin-bottom: 40px;
