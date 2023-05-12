@@ -166,7 +166,7 @@
   height: 100vh;
   display: flex;
   flex-direction: column;
-  background-image: url(./images/hero.png);
+  background-image: url(./images/hero.webp);
   background-repeat: no-repeat;
   background-position-x:center;
   filter: blur(0.22px);
@@ -206,7 +206,7 @@ h1{
   flex-direction: row;
   }
   #herodivimage{
-  background-image: url(./images/hero.webp);
+  background-image: url(./images/hero.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position-x:center;
